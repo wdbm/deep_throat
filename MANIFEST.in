@@ -1,0 +1,4 @@
+include deep_throat.py
+include LICENSE
+include README.md
+include setup.py

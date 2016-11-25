@@ -9,7 +9,7 @@ def main():
 
     setuptools.setup(
         name             = "deep_throat",
-        version          = "2016.11.25.0050",
+        version          = "2016.11.25.0121",
         description      = "speech",
         long_description = pypandoc.convert("README.md", "rst"),
         url              = "https://github.com/wdbm/deep_throat",

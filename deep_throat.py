@@ -79,7 +79,7 @@ import pyprel
 import shijian
 
 name    = "deep throat"
-version = "2016-11-25T0050Z"
+version = "2016-11-25T0121Z"
 logo    = None
 
 def main(options):

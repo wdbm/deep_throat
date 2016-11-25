@@ -78,17 +78,17 @@ The visual analysis mode saves histograms of all of the phonemes, saves multigra
 
 # usage examples
 
-|**command**                                                                                 |**comment**                    |
-|--------------------------------------------------------------------------------------------|-------------------------------|
-|`deep_throat.py -- help`                                                                    |help with options and arguments|
-|`deep_throat.py --text="hello world"`                                                       |speak specified text           |
-|`deep_throat.py --timeloop`                                                                 |speak time in a loop           |
-|`deep_throat.py --infile="text.txt"`                                                        |speak input text file          |
-|`deep_throat.py --text="hello world" --savetowavefile --savetowavefile --outfile="test.wav"`|save text to WAVE file         |
-|`echo "test" | deep_throat.py`                                                              |speak pipe text                |
-|`deep_throat.py --interactive`                                                              |engage interactive mode        |
-|`deep_throat.py --analysisvisual`                                                           |engage visual analysis mode    |
-|`deep_throat.py --analysissound`                                                            |engage sound analysis mode     |
+|**command**                                                                |**comment**                    |
+|---------------------------------------------------------------------------|-------------------------------|
+|`deep_throat.py -- help`                                                   |help with options and arguments|
+|`deep_throat.py --text="hello world"`                                      |speak specified text           |
+|`deep_throat.py --timeloop`                                                |speak time in a loop           |
+|`deep_throat.py --infile="text.txt"`                                       |speak input text file          |
+|`deep_throat.py --text="hello world" --savetowavefile --outfile="test.wav"`|save text to WAVE file         |
+|`echo "test" | deep_throat.py`                                             |speak pipe text                |
+|`deep_throat.py --interactive`                                             |engage interactive mode        |
+|`deep_throat.py --analysisvisual`                                          |engage visual analysis mode    |
+|`deep_throat.py --analysissound`                                           |engage sound analysis mode     |
 
 # future
 

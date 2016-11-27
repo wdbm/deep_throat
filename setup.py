@@ -9,7 +9,7 @@ def main():
 
     setuptools.setup(
         name             = "deep_throat",
-        version          = "2016.11.25.0121",
+        version          = "2016.11.27.1131",
         description      = "speech",
         long_description = pypandoc.convert("README.md", "rst"),
         url              = "https://github.com/wdbm/deep_throat",
@@ -23,12 +23,13 @@ def main():
                            "datavision",
                            "docopt",
                            "matplotlib",
+                           "nltk",
                            "numpy",
                            "propyte",
                            "pyaudio",
                            "pyprel",
                            "scipy",
-                           "shijian"
+                           "shijian",
                            ],
         scripts          = [
                            "deep_throat.py"

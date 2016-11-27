@@ -2,7 +2,7 @@
 
 # introduction
 
-Deep throat is a Python program that can generate speech. A simple approach to unrestricted text-to-speech translation uses a small set of letter-to-sound rules, each rule specifying a pronunciation for one or more letters in some context. Deep throat features a small set of letter-to-sound rules that translate English text to phonemes producing usably accurate pronunciations of words. Deep throat can produce sounds by combining stored representations of phoneme sounds in accordance with generated phoneme translations. It can output these sounds to computer sound hardware using PortAudio and it can save them to WAVE file.
+Deep throat is a Python program that can synthesize speech. A simple approach to unrestricted text-to-speech translation uses a small set of letter-to-sound rules, each rule specifying a pronunciation for one or more letters in some context. Deep throat features a small set of letter-to-sound rules that translate English text to phonemes producing usably accurate pronunciations of words. Deep throat can produce sounds by combining stored representations of phoneme sounds in accordance with generated phoneme translations. It can output these sounds to computer sound hardware using PortAudio and it can save them to sound file.
 
 Deep throat can accept text as a command line option argument, from a pipe and it can be set into an interactive mode.
 
@@ -15,7 +15,8 @@ sudo apt-get -y install libasound-dev
 sudo apt-get -y install portaudio
 sudo apt-get install python-pyaudio
 sudo apt-get install python3-pyaudio
-#sudo pip install pyaudio
+sudo pip install deep_throat
+sudo python -m nltk.downloader all
 ```
 
 # phonemes
@@ -63,7 +64,7 @@ There are data for 36 phonemes defined in deep throat:
 
 # letter-to-sound rules
 
-Deep throat letter-to-sound rules rules are defined in strings in a form easy for humans to read and write. Rules have the form A/B/C/D. The character string, occurring with left context A and right context C, gets the pronunciation D. Some simple example rules are as follows:
+Deep throat letter-to-sound rules rules are defined in strings in a form easy for humans to read and write. Rules have the form `A/B/C/D`: the character string occurring with left context `A` and right context `C` gets the pronunciation `D`. Some simple example rules are as follows:
 
 ```
 ARE/ / /AH-R
@@ -72,15 +73,11 @@ COMPUTER/ //K-AH-M-P-Y-OO-T-OH-R
 SHITFACED/ //S-H-IH-T-F-A-S-D"
 ```
 
-# visual and sound analyses
-
-The visual analysis mode saves histograms of all of the phonemes, saves multigraph comparisons of phonemes of different resolutions and saves graph comparisons of phonemes data and fast Fourier transform synthesized phonemes data. The sound analysis mode speaks the 50 most frequent Brown Corpus words.
-
 # usage examples
 
 |**command**                                                                |**comment**                    |
 |---------------------------------------------------------------------------|-------------------------------|
-|`deep_throat.py -- help`                                                   |help with options and arguments|
+|`deep_throat.py --help`                                                    |help with options and arguments|
 |`deep_throat.py --text="hello world"`                                      |speak specified text           |
 |`deep_throat.py --timeloop`                                                |speak time in a loop           |
 |`deep_throat.py --infile="text.txt"`                                       |speak input text file          |
@@ -90,9 +87,19 @@ The visual analysis mode saves histograms of all of the phonemes, saves multigra
 |`deep_throat.py --analysisvisual`                                          |engage visual analysis mode    |
 |`deep_throat.py --analysissound`                                           |engage sound analysis mode     |
 
+# visual and sound analyses
+
+The visual analysis mode saves histograms of all of the phonemes, saves multigraph comparisons of phonemes of different resolutions and saves graph comparisons of phonemes data and fast Fourier transform synthesized phonemes data. The sound analysis mode speaks the 50 most frequent Brown Corpus words.
+
+![](histogram_phoneme_S.png)
+
+![](resolutions_phoneme_S.png)
+
+![](synthetic_versus_data_S.png)
+
 # future
 
-Under consideration is phonemes data of higher resolution and system checks (such as PortAudio checks).
+Under consideration is improvement of rules interpretations, phonemes data of higher resolution, improvements in efficiency, and system checks (such as PortAudio checks).
 
 # references
 

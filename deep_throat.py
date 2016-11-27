@@ -79,7 +79,7 @@ import pyprel
 import shijian
 
 name    = "deep throat"
-version = "2016-11-25T0121Z"
+version = "2016-11-27T1131Z"
 logo    = None
 
 def main(options):
@@ -302,8 +302,8 @@ rules_English_to_phonemes_special_symbols = {
 }
 
 # Rules are defined in strings in a form easy for humans to read and write.
-# Rules have the form A/B/C/D. The character string, occurring with left context
-# A and right context C, gets the pronunciation D.
+# Rules have the form A/B/C/D. The character string occurring with left context
+# A and right context C gets the pronunciation D.
 rules_English_to_phonemes = [
     #" /// "
     "A// /UH",

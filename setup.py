@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import os
-import pypandoc
+
 import setuptools
 
 def main():
 
     setuptools.setup(
         name             = "deep_throat",
-        version          = "2017.01.16.1628",
+        version          = "2017.01.16.1643",
         description      = "speech",
         long_description = long_description(),
         url              = "https://github.com/wdbm/deep_throat",

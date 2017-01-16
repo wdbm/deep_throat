@@ -61,25 +61,25 @@ from __future__ import division
 
 import docopt
 import math
-import matplotlib
-import matplotlib.pyplot
-import numpy
 import os
-import pyaudio
 import re
-import scipy.interpolate
 import struct
 import sys
 import time
 import wave
 
 import datavision
+import matplotlib
+import matplotlib.pyplot
+import numpy
 import propyte
+import pyaudio
 import pyprel
 import shijian
+import scipy.interpolate
 
 name    = "deep throat"
-version = "2016-11-27T1131Z"
+version = "2017-01-16T1628Z"
 logo    = None
 
 def main(options):
@@ -95,9 +95,7 @@ def main(options):
     mode_time              = options["--time"]
     mode_timeloop          = options["--timeloop"]
     mode_file_output       = options["--savetowavefile"]
-    mode_translate_numbers = shijian.string_to_bool(
-                                 options["--translatenumbers"]
-                             )
+    mode_translate_numbers = options["--translatenumbers"].lower() == "true"
     mode_analysis_visual   = options["--analysisvisual"]
     mode_analysis_sound    = options["--analysissound"]
     global verbose

@@ -9,7 +9,7 @@ def main():
 
     setuptools.setup(
         name             = "deep_throat",
-        version          = "2017.01.16.1643",
+        version          = "2017.02.05.0145",
         description      = "speech",
         long_description = long_description(),
         url              = "https://github.com/wdbm/deep_throat",

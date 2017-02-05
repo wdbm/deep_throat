@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 """
 ################################################################################
@@ -11,7 +12,7 @@
 #                                                                              #
 # This is a speech program.                                                    #
 #                                                                              #
-# copyright (C) 2016 William Breaden Madden (named by Liam Moore)              #
+# copyright (C) 2016 William Breaden Madden, name by Liam Moore                #
 #                                                                              #
 # This software is released under the terms of the GNU General Public License  #
 # version 3 (GPLv3).                                                           #
@@ -79,7 +80,7 @@ import shijian
 import scipy.interpolate
 
 name    = "deep throat"
-version = "2017-01-16T1643Z"
+version = "2017-02-05T0145Z"
 logo    = None
 
 def main(options):

@@ -1,5 +1,9 @@
 # deep throat
 
+# credits
+
+- name by Liam Moore
+
 # introduction
 
 Deep throat is a Python program that can synthesize speech. A simple approach to unrestricted text-to-speech translation uses a small set of letter-to-sound rules, each rule specifying a pronunciation for one or more letters in some context. Deep throat features a small set of letter-to-sound rules that translate English text to phonemes producing usably accurate pronunciations of words. Deep throat can produce sounds by combining stored representations of phoneme sounds in accordance with generated phoneme translations. It can output these sounds to computer sound hardware using PortAudio and it can save them to sound file.

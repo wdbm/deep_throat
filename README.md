@@ -15,10 +15,11 @@ Deep throat can be set to read the date and time in various ways, such as in a l
 # setup
 
 ```Bash
-sudo apt-get -y install libasound-dev
-sudo apt-get -y install portaudio
-sudo apt-get install python-pyaudio
-sudo apt-get install python3-pyaudio
+sudo apt install   \
+    libasound-dev  \
+    portaudio      \
+    python-pyaudio \
+    python3-pyaudio
 sudo pip install deep_throat
 sudo python -m nltk.downloader all
 ```
@@ -86,7 +87,7 @@ SHITFACED/ //S-H-IH-T-F-A-S-D"
 |`deep_throat.py --timeloop`                                                |speak time in a loop           |
 |`deep_throat.py --infile="text.txt"`                                       |speak input text file          |
 |`deep_throat.py --text="hello world" --savetowavefile --outfile="test.wav"`|save text to WAVE file         |
-|`echo "test" | deep_throat.py`                                             |speak pipe text                |
+|`echo "test" \| deep_throat.py`                                            |speak pipe text                |
 |`deep_throat.py --interactive`                                             |engage interactive mode        |
 |`deep_throat.py --analysisvisual`                                          |engage visual analysis mode    |
 |`deep_throat.py --analysissound`                                           |engage sound analysis mode     |

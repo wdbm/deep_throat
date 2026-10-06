@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deep_throat"
+version = "2026.10.5.1856"
+description = "speech"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [
+    {name = "William Breaden Madden", email = "wbm@protonmail.ch"},
+]
+keywords = ["speech", "speech-synthesis", "text-to-speech", "tts"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "docopt>=0.6.2",
+]
+
+[project.optional-dependencies]
+audio = [
+    "PyAudio>=0.2.14",
+]
+dev = [
+    "build>=1.2.2",
+    "twine>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/wdbm/deep_throat"
+Repository = "https://github.com/wdbm/deep_throat.git"
+Issues = "https://github.com/wdbm/deep_throat/issues"
+
+[project.scripts]
+deep_throat = "deep_throat.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["deep_throat*"]
+namespaces = false
